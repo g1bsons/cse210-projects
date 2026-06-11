@@ -7,7 +7,7 @@ class Program
     {
         DisplayWelcome();
         string name = get_username();
-
+        int number = fav_number();
     }
       
     static void DisplayWelcome()
@@ -17,9 +17,17 @@ class Program
 
     static string get_username()
     {
-        Console.WriteLine("Whats your name?");
+        Console.Write("Whats your name? ");
         string name = Console.ReadLine();
         return name;
+    }
+
+
+    static int fav_number()
+    {
+        Console.Write("Whats your favorite number? ");
+        int number = int.Parse(Console.ReadLine());
+        return number;
     }
 
 }
