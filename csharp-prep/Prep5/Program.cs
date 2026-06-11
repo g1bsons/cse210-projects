@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.Runtime.InteropServices.Marshalling;
 
 class Program
@@ -10,6 +11,7 @@ class Program
         int number = fav_number();
         int year;
         get_birth_year(out year);
+        int square = squared_number(number);
     }
 
 
@@ -39,6 +41,13 @@ class Program
     {
         Console.Write("Whats year were you born in? ");
         year = int.Parse(Console.ReadLine());
+    }
+
+
+    static int squared_number(int number)
+    {
+        int square = number * number;
+        return square;
     }
 
 }
