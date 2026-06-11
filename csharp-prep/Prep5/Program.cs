@@ -8,7 +8,8 @@ class Program
         DisplayWelcome();
         string name = get_username();
         int number = fav_number();
-        int year = birth_year();
+        int year;
+        get_birth_year(out year);
     }
 
 
@@ -34,11 +35,10 @@ class Program
     }
 
 
-    static int birth_year()
+    static void get_birth_year(out int year)
     {
         Console.Write("Whats year were you born in? ");
-        int year = int.Parse(Console.ReadLine());
-        return year;
+        year = int.Parse(Console.ReadLine());
     }
 
 }
