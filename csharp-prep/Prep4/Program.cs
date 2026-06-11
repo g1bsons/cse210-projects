@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.Serialization;
 
 class Program
 {
@@ -32,7 +33,18 @@ class Program
         float average = ((float)sum) / numbers.Count;
 
 
+        int largest = numbers[0];
+        foreach (int num in numbers)
+        {
+            if (num > largest)
+            {
+                largest = num;
+            }
+        }
+
+
         Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The average is: {average}");
+        Console.WriteLine($"The largest number is: {largest}");
     }
 }
