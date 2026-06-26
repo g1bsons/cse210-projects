@@ -26,7 +26,9 @@ class Program
             {
                 break;
             }
-            scripture.HideRandomWord(3);
+            Random random = new Random();
+            int count = random.Next(1, 4);
+            scripture.HideRandomWord(count);
         }
     }
 }
