@@ -3,10 +3,12 @@ class Scripture
     private Reference _reference;
     private List<Word> _words;
 
-    public Scripture(Reference reference, List<Word> words)
+    public Scripture(Reference reference, string words)
     {
         _reference = reference;
-        _words = words;
+        _words = words.Split(' ')
+                      .Select(word => new Word(word))
+                      .ToList();
     }
     public string Render()
     {
