@@ -19,4 +19,16 @@ class Reference
         _verseStart = verseStart;
         _verseEnd = verseEnd;
     }
+
+    public string GetDisplayedText()
+    {
+        if (_verseStart == _verseEnd)
+        {
+            return $"{_book} {_chapter}:{_verseStart}";
+        }
+        else
+        {
+            return $"{_book} {_chapter}:{_verseStart}-{_verseEnd}";
+        }
+    }
 }
