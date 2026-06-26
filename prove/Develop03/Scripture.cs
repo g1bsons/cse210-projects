@@ -26,4 +26,8 @@ class Scripture
             visibleWords.RemoveAt(index);
         }
     }
+    public bool IsAllHidden()
+    {
+        return _words.All(word => word.IsHidden());
+    }
 }
