@@ -3,6 +3,9 @@
     "*": false,
     "plaintext": false,
     "markdown": false,
-    "csharp": false
+    "csharp": false,
+    "chat.disableAIFeatures": true,
+    "github.copilot.editor.enableCodeActions": false,
+    "github.copilot.editor.enableAutoCompletions": false
   }
 }
