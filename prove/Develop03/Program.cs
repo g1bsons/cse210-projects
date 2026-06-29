@@ -31,7 +31,4 @@ class Program
             scripture.HideRandomWord(count);
         }
     }
-
-
-    
 }
