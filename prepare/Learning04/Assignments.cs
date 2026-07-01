@@ -13,6 +13,17 @@ public class Assignments
         _topic = topic;
     }
 
+    // added these lines from the xample cause theres lots of issues in the code
+    public string GetStudentName()
+    {
+        return _studentName;
+    }
+
+    public string GetTopic()
+    {
+        return _topic;
+    }
+
     // Added the GetSummary method to return a name and topic with a dash
     public string GetSummary()
     {
