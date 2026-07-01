@@ -8,7 +8,8 @@ public class Math : Assignments
     private string _problems;
 
     // Created the constructor for all 4 parameters
-    public Math(string studentName, string topic, string textbookSection, string problems)
+    public Math (string studentName, string topic, string textbookSection, string problems)
+        :base (studentName, topic)
     {
         _textbookSection = textbookSection;
         _problems = problems;
