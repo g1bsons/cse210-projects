@@ -8,6 +8,7 @@ public class Writing : Assignments
 
     // Wrote the constructor
     public Writing(string studentName, string topic, string title)
+        : base (studentName, topic)
     {
         _title = title;
     }
