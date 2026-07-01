@@ -1,7 +1,7 @@
 using System;
 
 // Added math to inherit from Assignments
-public class Math Math : Assignments
+public class Math : Assignments
 {
     // Added the attributes as private variables
     private string _textbookSection;

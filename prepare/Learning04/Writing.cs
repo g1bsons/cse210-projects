@@ -1,7 +1,7 @@
 using System;
 
 // Added math to inherit from Assignments
-public class Writing Writing : Assignments
+public class Writing : Assignments
 {
     // Added private variable
     private string _title;
