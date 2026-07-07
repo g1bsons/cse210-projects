@@ -7,7 +7,7 @@ public class Shape
         _color = color;
     }
 
-    public string Getcolor()
+    public string GetColor()
     {
         return _color;
     }
