@@ -1,6 +1,6 @@
 public abstract class Shape
 {
-    private string_color;
+    private string _color;
 
     public Shape(string color)
     {
