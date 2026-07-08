@@ -5,6 +5,7 @@ class Program
     static void Main(string[] args)
     {
         bool running = true;
+        // For the stretch, I added a counter to keeop track of how many activities are completed by the user 
         int activitiesCompeted = 0;
 
         while (running)
@@ -50,3 +51,4 @@ class Program
         Console.WriteLine($"Good job! You completed {activitiesCompeted} activity/activities this session.");
     }
 }
+
