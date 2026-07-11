@@ -41,6 +41,10 @@ public abstract class Goal
     }
 
 
-    //
+    // these are the abstract methods
+    // meaning they have no specified implementation here
+    public abstract int RecordEvent();
+    public abstract string GetDetails();
+    public abstract string SaveString();
 
 }
