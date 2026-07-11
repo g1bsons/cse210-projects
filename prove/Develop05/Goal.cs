@@ -2,13 +2,13 @@ using System;
 
 public abstract class Goal
 {
-    //these are the variables
+    // these are the variables
     private string _name;
     private int _points;
     private bool _isComplete;
 
 
-    //this is the constructor
+    // this is the constructor
     public Goal(string name, int points)
     {
         _name = name;
@@ -17,7 +17,7 @@ public abstract class Goal
     }
 
 
-    //these are the getters
+    // these are the getters
     public string GetName()
     {
         return _name;
@@ -32,5 +32,15 @@ public abstract class Goal
     {
         return _isComplete;
     }
+
+
+    // this is the setter
+    protected void SetComplete(bool value)
+    {
+        _isComplete = value;
+    }
+
+
+    //
 
 }
