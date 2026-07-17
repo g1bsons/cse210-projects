@@ -16,7 +16,14 @@ class Video
         _length = length;
     }
 
-
+    public int GetNumComments()
+    {
+        return _comments.Count;
+    }
+    public void AddComment(Comment comment)
+    {
+        _comments.Add(comment);
+    }
     public string GetTitle()
     {
         return _title;
@@ -28,5 +35,9 @@ class Video
     public int GetLength()
     {
         return _length;
+    }
+    public List<Comment> GetComments()
+    {
+        return _comments;
     }
 }
