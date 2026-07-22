@@ -19,20 +19,8 @@ class Product
     {
         return _unitPrice * _quantity;
     }
-    public string GetName()
+    public string GetProductInfo()
     {
-        return _name;
-    }
-    public string GetProductId()
-    {
-        return _productId;
-    }
-    public double GetUnitPrice()
-    {
-        return _unitPrice;
-    }
-    public int GetQuantity()
-    {
-        return _quantity;
+        return _name + ", " + _productId;
     }
 }
