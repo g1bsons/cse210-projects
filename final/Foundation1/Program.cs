@@ -37,15 +37,7 @@ class Program
 
         foreach (Video v  in videos)
         {
-            Console.WriteLine("Title: " + v.GetTitle());
-            Console.WriteLine("Author: " + v.GetAuthor());
-            Console.WriteLine("Length: " + v.GetLength());
-            Console.WriteLine("Comments: " + v.GetNumComments());
-
-            foreach (Comment c in v.GetComments())
-            {
-                Console.WriteLine(" " + c.GetName() + ": " + c.GetText());
-            }
+            v.Display();
         }
     }
 }
