@@ -16,13 +16,8 @@ class Customer
         return _address.IsInUSA();
     }
 
-    public string GetName()
+    public string ShippingInfo()
     {
-        return _name;
-    }
-
-    public Address GetAddress()
-    {
-        return _address;
+        return _name + "\n" + _address.FormattedAddress();
     }
 }
