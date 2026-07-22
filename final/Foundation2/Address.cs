@@ -27,24 +27,7 @@ class Address
         }
     }
 
-    public string GetStreetAddress()
-    {
-        return _streetAddress;
-    }
-    public string GetCity()
-    {
-        return _city;
-    }
-    public string GetState()
-    {
-        return _state;
-    }
-    public string GetCountry()
-    {
-        return _country;
-    }
-
-    public override string ToString()
+    public string FormattedAddress()
     {
         return _streetAddress + "\n" + _city + ", " + _state + "\n" + _country;
     }
