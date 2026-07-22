@@ -39,17 +39,24 @@ class Order
 
     public string GetPackingLabel()
     {
-        string label = "";
+        string label = "Packing Label: \n";
 
         foreach( Product p in _products)
         {
-            label = label + p.GetName() + " (" + p.GetProductId() + ")\n";
+            label = p.GetProductInfo() + "\n";
         }
         return label;
     }
 
     public string GetShippingLabel()
     {
-        return _customer.GetName() + "\n" + _customer.GetAddress().ToString();
+        return $"Shipping Label:" + "\n" + _customer.ShippingInfo();
+    }
+
+    public void ShowOrderDetails()
+    {
+        Console.WriteLine(GetPackingLabel());
+        Console.WriteLine(GetShippingLabel());
+        Console.WriteLine($"Total Price: ${GetTotalCost():F2}");
     }
 }
