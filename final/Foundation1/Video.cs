@@ -16,28 +16,27 @@ class Video
         _length = length;
     }
 
-    public int GetNumComments()
-    {
-        return _comments.Count;
-    }
     public void AddComment(Comment comment)
     {
         _comments.Add(comment);
     }
-    public string GetTitle()
+
+    public int GetNumComments()
     {
-        return _title;
+        return _comments.Count;
     }
-    public string GetAuthor()
+
+    public void Display()
     {
-        return _author;
-    }
-    public int GetLength()
-    {
-        return _length;
-    }
-    public List<Comment> GetComments()
-    {
-        return _comments;
+        Console.WriteLine($"Title: {_title}");
+        Console.WriteLine($"Author: {_author}");
+        Console.WriteLine($"Length: {_length} seconds");
+        Console.WriteLine($"Number of comments {GetNumComments()}:");
+
+        foreach (Comment comment in _comments)
+        {
+            comment.Display();
+        }
+        Console.WriteLine();
     }
 }
