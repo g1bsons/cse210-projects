@@ -2,23 +2,23 @@ using System;
 
 public class Reception : Event
 {
-    private string email;
+    private string _email;
 
     public Reception(string title, string description, string date, string time, Address address, string email)
         :base("Reception", title, description, date, time, address)
     {
-        this.email = email;
+        this._email = email;
     }
 
     public string GetEmail()
     {
-        return email;
+        return _email;
     }
 
     public string GetFullDetails()
     {
         string details = base.GetFullDetails();
-        details = details + "Email: " + email + "\n";
+        details = details + "Email: " + _email + "\n";
         return details;
     }
 }

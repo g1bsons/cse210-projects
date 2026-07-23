@@ -43,7 +43,7 @@ class Order
 
         foreach( Product p in _products)
         {
-            label = p.GetProductInfo() + "\n";
+            label = label + p.GetProductInfo() + "\n";
         }
         return label;
     }

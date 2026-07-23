@@ -2,65 +2,65 @@ using System;
 
 public class Event
 {
-    private string eventType;
-    private string title;
-    private string description;
-    private string date;
-    private string time;
-    private Address address;
+    private string _eventType;
+    private string _title;
+    private string _description;
+    private string _date;
+    private string _time;
+    private Address _address;
 
     public Event(string eventType, string title, string description, string date, string time, Address address)
     {
-        this.eventType = eventType;
-        this.title = title;
-        this.description = description;
-        this.date = date;
-        this.time = time;
-        this.address = address;
+        this._eventType = eventType;
+        this._title = title;
+        this._description = description;
+        this._date = date;
+        this._time = time;
+        this._address = address;
     }
 
 
     public string GetEventType()
     {
-        return eventType;
+        return _eventType;
     }
     public string GetTitle()
     {
-        return title;
+        return _title;
     }
     public string GetDate()
     {
-        return date;
+        return _date;
     }
     public string GetTime()
     {
-        return time;
+        return _time;
     }
     public Address GetAddress()
     {
-        return address;
+        return _address;
     }
 
     public string GetDetails()
     {
-        string details = "Title: " + title + "\n";
-        details = details + "Description: " + description + "\n";
-        details = details + "Date: " + date + "\n";
-        details = details + "Time: " + time + "\n";
-        details = details + "Address: " + address.ToString() + "\n";
+        string details = "Title: " + _title + "\n";
+        details = details + "Description: " + _description + "\n";
+        details = details + "Date: " + _date + "\n";
+        details = details + "Time: " + _time + "\n";
+        details = details + "Address: " + _address.ToString() + "\n";
         return details;
     }
 
     public string GetFullDetails()
     {
-        string details = "Event Type: " +eventType + "\n";
+        string details = "Event Type: " + _eventType + "\n";
         details = details + GetDetails();
         return details;
     }
 
     public string GetDescription()
     {
-        string description = eventType + " - " + title + " " + date;
+        string description = _eventType + " - " + _title + " " + _date;
         return description;
     }
 }

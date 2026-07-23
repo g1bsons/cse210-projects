@@ -2,23 +2,23 @@ using System;
 
 public class OutdoorGathering : Event
 {
-    private string weather;
+    private string _weather;
 
     public OutdoorGathering(string title, string description, string date, string time, Address address, string weather)
         :base("Outdoor Gathering", title, description, date, time, address)
     {
-        this.weather = weather;
+        this._weather = weather;
     }
 
     public string GetWeather()
     {
-        return weather;
+        return _weather;
     }
 
     public string GetFullDetails()
     {
         string details = base.GetFullDetails();
-        details = details + "Weather: " + weather + "\n";
+        details = details + "Weather: " + _weather + "\n";
         return details;
     }
 }
